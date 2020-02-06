@@ -3,6 +3,13 @@
     <title>Super Borea for a Super good time</title>
 
     <style>
+      #fart-smells {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
       #myVideo {
         position: fixed;
         right: 0;
@@ -13,13 +20,23 @@
       }
     </style>
 
+    <script>
+      document.getElementById("fart-smells").addEventListener("click", videoClick);
+
+      function videoClick(){
+        console.log("Must have eaten bacon");
+      }
+    </script>
+
   </head>
   <body>
 
-    <!-- Your mother eats tulips -->
-    <video autoplay loop muted id="myVideo">
-      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-    </video>
+    <div id="fart-smells">
+      <!-- Your mother eats tulips -->
+      <video autoplay loop muted id="myVideo">
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+      </video>
+    </div>
 
   </body>
 </html>
