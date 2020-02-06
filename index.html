@@ -18,6 +18,15 @@
         min-height: 100%;
         background-color: white;
       }
+      #content {
+        padding: 200px 78px;
+        display: none;
+      }
+
+      h2 { 
+        font-size: larger;
+        color: gray;
+      }
     </style>
 
   </head>
@@ -28,6 +37,16 @@
       <video autoplay loop muted id="myVideo">
         <source src="https://super-borea.s3-us-west-2.amazonaws.com/IMG_7845.mp4" type="video/mp4">
       </video>
+
+      <div id="content">
+        <h2>About the Borea</h2>
+        <div class="about">
+          This is where you would say something about the things that blow <br />
+          Something about the ice that flows <br />
+          Or nothing about all the things we know <br />
+        </div>
+      </div>
+
     </div>
 
     <script>
@@ -35,7 +54,8 @@
 
       function videoClick(){
         console.log("Must have eaten bacon");
-        window.location.href = "/about.html";
+        document.getElementById("content").style.display = "block"
+        // window.location.href = "/about.html";
       }
     </script>
   </body>
